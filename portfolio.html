@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My portfolio</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+      body {
+        font-family: "Ubuntu Mono", monospace;
+        background-color: rgb(60, 59, 59);
+      }
+
+      header {
+        text-align: center;
+        position: sticky;
+        background-color: rgb(60, 59, 59);
+        z-index: 100;
+        top: 0;
+        margin-top: 20px;
+      }
+
+      header span {
+        margin-right: 15px;
+        /* background-color: goldenrod;
+        border-radius: 15px; */
+        padding: 7px;
+      }
+
+      header a {
+        text-decoration: none;
+        color: rgb(181, 181, 181);
+      }
+
+      header a:hover {
+        color: aliceblue;
+      }
+
+      main {
+        color: rgb(215, 233, 250);
+        margin-top: 50px;
+      }
+
+      .about {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-bottom: 150px;
+        margin-top: 100px;
+      }
+
+      main div .intro {
+        width: fit-content;
+      }
+
+      main div img {
+        width: 150px;
+        border-radius: 99px;
+        border: 5px solid #d5d5d5;
+      }
+
+      .portfolio {
+        display: inline;
+        text-align: center;
+      }
+
+      .skill {
+        width: 100px;
+        height: 100px;
+        background: #d5d5d5;
+        margin: 10px;
+        display: inline-block;
+        border-radius: 10px;
+        color: black;
+        margin-top: 20px;
+        margin-bottom: 200px;
+      }
+
+      .projects {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .pro {
+        width: 100px;
+        height: 100px;
+        background: #d5d5d5;
+        margin: 10px;
+        border-radius: 10px;
+        color: black;
+        margin-top: 20px;
+      }
+
+      #view {
+        background-color: goldenrod;
+        font-size: large;
+        padding: 8px;
+        border-radius: 25px;
+        border: 2px solid black;
+        cursor: pointer;
+        margin-top: 20px;
+      }
+
+      #view:hover {
+        background-color: rgb(168, 128, 25);
+      }
+
+      .contact {
+        margin-left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <span id="logo">Logo</span>
+      <span><a href="#about">About</a></span>
+      <span><a href="#portfolio">Portfolio</a></span>
+      <span><a href="#contact">Contact</a></span>
+    </header>
+
+    <main>
+      <div class="about" id="about">
+        <div class="intro">
+          <h1>
+            Hello
+            <br />
+            My name is Miko.
+          </h1>
+          <h3>
+            I am someone who enjoys design and creating websites. <br />I'm very
+            eager to grow and learn new things.
+          </h3>
+        </div>
+        <img src="assets/miko.JPG" />
+      </div>
+
+      <div class="portfolio" id="portfolio">
+        <h1>My skills</h1>
+        <div class="skills">
+          <div class="skill">A</div>
+          <div class="skill">B</div>
+          <div class="skill">C</div>
+          <div class="skill">D</div>
+        </div>
+        <div class="proGroup">
+          <h1>My projects</h1>
+          <div class="projects">
+            <div class="pro">Project 1</div>
+            <div class="pro">Project 2</div>
+            <div class="pro">Project 3</div>
+          </div>
+          <button id="view" type="submit">View more</button>
+        </div>
+      </div>
+      <hr />
+      <div class="contact" id="contact">
+        <h1>Contact</h1>
+        <h2>Email<br />example@mail.com</h2>
+        <h2>Phone<br />08XX-XXXX-XXXX</h2>
+        <h2>Social media<br />@xxxxxxxxx</h2>
+      </div>
+    </main>
+  </body>
+</html>
